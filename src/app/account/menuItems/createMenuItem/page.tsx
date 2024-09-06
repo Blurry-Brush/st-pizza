@@ -15,7 +15,7 @@ interface CategoryType {
   createdAt: Date;
 }
 
-const page = () => {
+const Page = () => {
   const [imageUrl, setImageUrl] = useState(null);
   const [categories, setCategories] = useState<CategoryType[] | []>([]);
   const router = useRouter();
@@ -145,4 +145,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

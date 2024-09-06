@@ -17,7 +17,7 @@ interface CategoryType {
   createdAt: Date;
 }
 
-const page = ({ params }: { params: { id: string } }) => {
+const Page = ({ params }: { params: { id: string } }) => {
   const [imageUrl, setImageUrl] = useState("");
   const [categories, setCategories] = useState<CategoryType[] | []>([]);
   const [menuItem, setMenuItem] = useState<MenuItemType | null>(null);
@@ -156,4 +156,4 @@ const page = ({ params }: { params: { id: string } }) => {
   );
 };
 
-export default page;
+export default Page;

@@ -4,7 +4,7 @@ import MenuItemCard from "../../components/menu/MenuItemCard";
 import Right from "../../components/icons/Right";
 import Link from "next/link";
 
-const page = async () => {
+const Page = async () => {
   const menuItems = await prisma.menuItem.findMany();
   console.log(menuItems);
   return (
@@ -27,4 +27,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Page;

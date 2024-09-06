@@ -13,7 +13,7 @@ import { UserType } from "../../../utils/types";
 import toast from "react-hot-toast";
 import Loading from "../../components/layout/Loading";
 
-const page = () => {
+const Page = () => {
   const { isLoaded, isSignedIn, user } = useUser();
   const [loading, setLoading] = useState(false);
   const [imageUrl, setImageUrl] = useState("");
@@ -189,4 +189,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

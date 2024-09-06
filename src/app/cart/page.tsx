@@ -5,7 +5,7 @@ import useCartStore from "../../stores/cart-store";
 import CartItemCard from "../components/cart/CartItemCard";
 import CartCheckout from "../components/cart/CartCheckout";
 
-const page = () => {
+const Page = () => {
   const { cartItems } = useCartStore();
   let totalPrice = cartItems.reduce((total, cartItem) => {
     return total + parseInt(cartItem.basePrice) * cartItem.quantity;
@@ -41,4 +41,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
